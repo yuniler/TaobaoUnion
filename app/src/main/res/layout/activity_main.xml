@@ -7,14 +7,18 @@
     tools:context=".ui.activity.MainActivity">
 
     <FrameLayout
+        android:id="@+id/main_pager_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:layout_alignParentBottom="true"
+        app:itemTextColor="@drawable/navigation_bar_color"
+        app:itemIconTint="@drawable/navigation_bar_color"
         app:menu="@menu/my_navigation_items"/>
 
 
